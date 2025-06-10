@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire du Fort - Mise en contexte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="poi.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="icon_header">
+                <a href="index.html"><img src="./images/icon_carte.svg" alt="Icône Carte"></a>
+            </div>
+            <div id="logo">
+                <a id="lien_to_map" href="index.html"><img src="./images/logo.svg" alt="Logo Fort Tales"></a>
+            </div>
+            <div class="icon_header">
+                <a href="frise.html"><img src="./images/icon_frise.svg" alt="Icône Frise chronologique"></a>
+            </div>
+        </header>
+        <div id="content_container">
+            <section id="video_container">
+                <div class="videos">
+                    <video id="capsules" src="./videos/intro.mp4"></video>
+                </div>
+                <div id="retour">
+                    <a href="index.html"><button id="btnRetour"><img src="./images/retour_poi.svg" alt="Bouton retour"></button></a>
+                </div>
+                <div id="lecture">
+                    <button id="btnLecture"><img src="./images/lecture.svg" alt="Bouton lecture"></button>
+                </div>
+            </section>
+            <section id="content">
+                <div id="espace_doigt">
+                    <img src="./images/doigt.png" alt="">
+                </div>
+                <div id="titre">
+                    <h1>Mise en contexte</h1>
+                    <h2>L'histoire du Fort Napoléon</h2>
+                    <div id="compteur">
+                        <div id="icon_compteur">
+                            <img src="./images/icon_compteur.svg" alt="">
+                        </div>
+                        <div id="nb_compteur">
+                            <p>1/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contenu">
+                    <div class="textes">
+                        <p>Explorez l'histoire de Fort Napoléon à travers un jeu de cartes à collectionner ! À chaque point d'intérêt du parcours, débloquez une carte : elle vous permet d'accéder à des contenus exclusifs (vidéos, animations, anecdotes…) liés à l'histoire et à l'architecture du lieu. Lorsque vous avez réuni toutes les cartes, une surprise finale vous attend…</p>
+                        <p>Serez-vous capable de compléter la collection et de reconstituer toute l'histoire du fort ?</p>
+                    </div>
+                    <div id="motion">
+                        <img id="motion1" class="zoomable" src="./images/motion_poi1.gif" alt="Tuto concept.">
+                    </div>
+                    <div class="textes">
+                        <p>En 1793, Toulon est livrée aux Anglais et leurs alliés par les royalistes. Napoléon Bonaparte, alors jeune capitaine d'artillerie de l'armée républicaine chargée de reprendre le grand port, propose de reprendre la colline du Caire. Le 17 décembre, les Républicains triomphent. En 1811, l'Empereur ordonne la construction d'un fort à cet emplacement stratégique. Il deviendra plus tard le Fort Napoléon.</p>
+                    </div>
+                    <div id="fin_content">
+                        <img src="./images/chouette.png" alt="Notre mascotte chouette fait coucou.">
+                        <a href="index.html"><button id="next">Commencer la collecte de cartes !</button></a>
+                    </div>
+                    <div id="next_poi">
+                        <a id="lien_to_map" href="index.html"><p>Déplacez-vous jusqu'au prochain point !</p></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="lightbox-overlay" class="hidden">
+        <img id="lightbox-img" src="" alt="Plein écran">
+        <span id="lightbox-close">&times;</span>
+    </div>
+    <script src="videos.js"></script>
+    <script src="poi.js"></script>
+    <script src="lightbox.js"></script>
+</body>
+</html>

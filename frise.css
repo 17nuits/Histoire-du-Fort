@@ -1,0 +1,141 @@
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: var(--blanc);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+#logo img {
+    height: 38px;
+}
+
+.icon_header img {
+    height: 29px;
+}
+
+#content_container{ 
+    height: 100vh; 
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+#content {
+    background: var(--blanc);
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+h1 {
+    font-family: 'Antonio';
+    color: var(--rose);
+    font-size: 32px;
+    margin-bottom: 7px;
+}
+
+h2 {
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 9px;
+    color: var(--violet);
+}
+
+#titre {
+    margin-bottom: 30px;
+}
+
+#compteur {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+
+#compteur p {
+    font-family: 'Josefin Sans';
+    color: var(--gris);
+}
+
+.ligne {
+    position: relative;
+    width: 6px;
+    background: var(--violet_pale);
+    margin: 0 auto;
+    height: 100%;
+}
+
+.rond {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--blanc);
+    border: 6px solid var(--violet_pale);
+    position: relative;
+    top: -180px;
+    left: -10px;
+}
+
+.triangle-gauche {
+    position: relative;
+    top: -201px;
+    left: -28px;
+}
+
+.triangle-droite {
+    position: relative;
+    top: -201px;
+    left: 22px;
+}
+
+.cartes {
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cartes img {
+    width: 100%;
+}
+
+.cartes h3 {
+    font-family: 'Antonio';
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--violet);
+}
+
+.bloc-gauche {
+    transform: translateX(-130%);
+}
+
+.bloc-droite {
+    transform: translateX(35%);
+}
+
+#fin_content {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blanc);
+    padding-bottom: 50px;
+}

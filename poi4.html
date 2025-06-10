@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorama de la Rade - Position stratégique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="poi.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="icon_header">
+                <a href="index.html"><img src="./images/icon_carte.svg" alt="Icône Carte"></a>
+            </div>
+            <div id="logo">
+                <a id="lien_to_map" href="index.html"><img src="./images/logo.svg" alt="Logo Fort Tales"></a>
+            </div>
+            <div class="icon_header">
+                <a href="frise.html"><img src="./images/icon_frise.svg" alt="Icône Frise chronologique"></a>
+            </div>
+        </header>
+        <div id="content_container">
+            <section id="video_container">
+                <div class="videos">
+                    <video id="capsules" src="./videos/intro.mp4"></video>
+                </div>
+                <div id="retour">
+                    <a href="index.html"><button id="btnRetour"><img src="./images/retour_poi.svg" alt="Bouton retour"></button></a>
+                </div>
+                <div id="lecture">
+                    <button id="btnLecture"><img src="./images/lecture.svg" alt="Bouton lecture"></button>
+                </div>
+            </section>
+            <section id="content">
+                <div id="entete" class="flou">
+                    <div id="espace_doigt">
+                        <img src="./images/doigt.png" alt="">
+                    </div>
+                    <div id="titre">
+                        <h1>L'ennemi piégé</h1>
+                        <h2>Fossé et plan en étoile</h2>
+                        <div id="compteur">
+                            <div id="icon_compteur">
+                                <img src="./images/icon_compteur.svg" alt="">
+                            </div>
+                            <div id="nb_compteur">
+                                <p>4/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contenu">
+                    <div id="motion" class="flou">
+                        <img id="motion4" class="zoomable" src="./images/motion_poi4.gif" alt="Motion design de l'architecture du fort.">
+                    </div>
+                    <div id="espace_chouette">
+                        <div id="chouette">
+                            <img src="./images/chouette.png" alt="Notre mascotte chouette fait coucou.">
+                            <div id="bulle">
+                                <p>Si on se retourne, on aperçoit le fort de Six-Fours !</p>
+                            </div>
+                        </div>
+                        <div id="bouton">
+                            <button id="btnchouette">Info chouette !</button>
+                        </div>
+                    </div>
+                    <a class="flou">
+                        <a id="lien_to_map" href="index.html"><p id="next_poi">On se retrouve au prochain point !</p></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="lightbox-overlay" class="hidden">
+        <img id="lightbox-img" src="" alt="Plein écran">
+        <span id="lightbox-close">&times;</span>
+    </div>
+    <script src="videos.js"></script>
+    <script src="chouette.js" defer></script>
+    <script src="poi.js"></script>
+    <script src="lightbox.js"></script>
+</body>
+</html>

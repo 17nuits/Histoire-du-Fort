@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin="">
+    </script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="map.css">
+    <title>Histoire du Fort - Map</title>
+</head>
+<body>
+    <div id="loader">
+        <video autoplay muted playsinline id="videoLoader">
+            <source src="./videos/purplebg.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <div class="container">
+        <header>
+            <div class="icon_header">
+                <a href="#"><img src="./images/icon_carte_selected.svg" alt="Icône Carte"></a>
+            </div>
+            <div id="logo">
+                <a id="lien_to_map" href="index.html"><img src="./images/logo.svg" alt="Logo Fort Tales"></a>
+            </div>
+            <div class="icon_header">
+                <a href="frise.html"><img src="./images/icon_frise.svg" alt="Icône Frise chronologique"></a>
+            </div>
+        </header>
+        <div id="map"></div>
+        <div id="first_visit_overlay">
+            <div id="first_visit">
+                <p><strong>Bienvenue !</strong></p>
+                <p>Rendez-vous près du premier point d'intérêt, celui qui mène vers le pont-levis. Ils sont signalés par des marqueurs roses.</p>
+                <button id="first_visit_close">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="loading.js"></script>
+    <script src="script.js"></script>
+    <script src="first_visit.js"></script>
+    <script src="compteur.js"></script>
+</body>
+</html>

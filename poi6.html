@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorama sur l'anse des Sablettes - Fort de mer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="poi.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="icon_header">
+                <a href="index.html"><img src="./images/icon_carte.svg" alt="Icône Carte"></a>
+            </div>
+            <div id="logo">
+                <a id="lien_to_map" href="index.html"><img src="./images/logo.svg" alt="Logo Fort Tales"></a>
+            </div>
+            <div class="icon_header">
+                <a href="frise.html"><img src="./images/icon_frise.svg" alt="Icône Frise chronologique"></a>
+            </div>
+        </header>
+        <div id="content_container">
+            <section id="video_container">
+                <div class="videos">
+                    <video id="capsules" src="./videos/intro.mp4"></video>
+                </div>
+                <div id="retour">
+                    <a href="index.html"><button id="btnRetour"><img src="./images/retour_poi.svg" alt="Bouton retour"></button></a>
+                </div>
+                <div id="lecture">
+                    <button id="btnLecture"><img src="./images/lecture.svg" alt="Bouton lecture"></button>
+                </div>
+            </section>
+            <section id="content">
+                <div id="entete" class="flou">
+                    <div id="espace_doigt">
+                        <img src="./images/doigt.png" alt="">
+                    </div>
+                    <div id="titre">
+                        <h1>Fort de mer</h1>
+                        <h2>Panorama sur l'anse des Sablettes</h2>
+                        <div id="compteur">
+                            <div id="icon_compteur">
+                                <img src="./images/icon_compteur.svg" alt="">
+                            </div>
+                            <div id="nb_compteur">
+                                <p>6/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contenu">
+                    <div class="textes flou">
+                        <h3>Photo de l'anse des Sablettes</h3>
+                    </div>
+                    <div id="bloc_photos" class="flou">
+                        <div class="photos">
+                            <img id="sablettes" class="zoomable" src="./images/sablettes.jpg" alt="Anse des Sablettes.">
+                        </div>
+                    </div>
+                    <div id="espace_chouette">
+                        <div id="chouette">
+                            <img src="./images/chouette.png" alt="Notre mascotte chouette fait coucou.">
+                            <div id="bulle">
+                                <p>Autrefois, on y cultivait des vignes et des oliviers… protégés, comme toute la côte, par les canons du fort !</p>
+                            </div>
+                        </div>
+                        <div id="bouton">
+                            <button id="btnchouette">Info chouette !</button>
+                        </div>
+                    </div>
+                    <div class="flou">
+                        <a id="lien_to_map" href="index.html"><p id="next_poi">Vous y êtes presque ! Vous pouvez vous rendre au dernier point !</p></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="lightbox-overlay" class="hidden">
+        <img id="lightbox-img" src="" alt="Plein écran">
+        <span id="lightbox-close">&times;</span>
+    </div>
+    <script src="videos.js"></script>
+    <script src="chouette.js" defer></script>
+    <script src="poi.js"></script>
+    <script src="lightbox.js"></script>
+</body>
+</html>

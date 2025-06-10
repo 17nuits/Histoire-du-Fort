@@ -1,0 +1,334 @@
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: var(--blanc);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#logo img {
+    height: 38px;
+}
+
+.icon_header img {
+    height: 29px;
+}
+
+#content_container{ 
+    height: 100vh; 
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+#bouton_retour {
+    position: relative;
+    margin-top: 50px;
+}
+
+#retour {
+    position: absolute;
+    z-index: 8;
+    top: 35px;
+    left: 15px;
+}
+
+#btnRetour {
+    background-color: var(--blanc);
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 9px;
+    padding: 0;
+    box-shadow: 0 0 10px var(--gris);
+}
+
+#btnRetour:active {
+    background-color: var(--blanc_clicked);
+}
+
+#compteur {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+
+#compteur p {
+    font-family: 'Josefin Sans';
+    color: var(--gris);
+}
+
+#content {
+    padding: 50px 20px 40px;
+    text-align: center;
+    background-color: var(--blanc);
+}
+
+#titre {
+    text-align: center;
+}
+
+#espace_doigt {
+    display: flex;
+    justify-content: center;
+}
+
+.textes {
+    font-family: 'Josefin Sans';
+    margin: 37px 0;
+    color: var(--noir);
+}
+
+h1 {
+    font-family: 'Antonio';
+    color: var(--rose);
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    font-weight: 500;
+    margin: 23px 0;
+    color: var(--violet);
+}
+
+#conteneur_image {
+    margin-bottom: 44px;
+}
+
+#conteneur_boutons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-bottom: 37px;
+}
+
+#btnGlacis {
+    color: var(--blanc);
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+    background-color: var(--rose);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+#btnChemins {
+    color: var(--blanc);
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+    background-color: var(--violet_pale);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+#image-base {
+    border-radius: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+.photos {
+    margin-bottom: 15px;
+}
+
+.photos img {
+    border-radius: 30px;
+    width: 80vw;
+}
+
+.photos2 {
+    margin-bottom: 15px;
+}
+
+.photos2 img {
+    border-radius: 30px;
+    width: 135px;
+}
+
+.legendes {
+    margin-bottom: 37px;
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    color: var(--noir);
+}
+
+.lecture {
+    background: none;
+    border: none;
+}
+
+#double {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+#espace_chouette {
+    position: relative;
+    z-index: 10;
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 37px;
+}
+
+#bulle {
+    position: absolute;
+    bottom: 155px;
+    left: 40px;
+    background-color: var(--violet_pale);
+    color: var(--noir);
+    border-radius: 12px;
+    padding: 10px 14px;
+    width: 220px;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0 0 10px var(--gris);
+    display: none;
+  }
+
+#bulle::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 70px solid transparent;
+    border-top: 20px solid var(--violet_pale);
+}
+
+#chouette {
+    position: relative;
+}
+
+#chouette img {
+    width: 100px;
+}
+
+.flou.blur {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+}
+
+#btnchouette {
+    font-family: 'Antonio';
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--blanc);
+    background-color: var(--violet);
+    border: none;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 17px;
+}
+
+#btnchouette:active {
+    background-color: var(--violet_clicked);
+    color: var(--blanc_clicked);
+}
+
+#next_poi {
+    font-family: 'Antonio';
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--violet);
+    padding: 0 40px;
+}
+
+#fin_content img {
+    width: 175px;
+    margin-bottom: 37px;
+} 
+
+#fin_content p {
+    font-family: 'Antonio';
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--violet);
+    padding: 0 40px;
+    margin-bottom: 37px;
+}
+
+#go_frise {
+    font-family: 'Antonio';
+    font-size: 18px;
+    color: var(--blanc);
+    background-color: var(--violet);
+    border: none;
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 17px;
+    margin-bottom: 37px;
+}
+
+#go_frise:active {
+    background-color: var(--violet_clicked);
+    color: var(--blanc_clicked);
+}
+
+#lien_to_map {
+    text-decoration: none;
+    color: var(--violet);
+}
+
+#lien_to_map:active {
+    text-decoration: none;
+    color: var(--violet_clicked);
+}
+
+#lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+#lightbox-overlay.hidden {
+  display: none;
+}
+
+#lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border-radius: 8px;
+}
+
+#lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}

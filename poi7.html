@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin de parcours - À travers le temps</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="poi_no_vid.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="icon_header">
+                <a href="index.html"><img src="./images/icon_carte.svg" alt="Icône Carte"></a>
+            </div>
+            <div id="logo">
+                <a id="lien_to_map" href="index.html"><img src="./images/logo.svg" alt="Logo Fort Tales"></a>
+            </div>
+            <div class="icon_header">
+                <a href="frise.html"><img src="./images/icon_frise.svg" alt="Icône Frise chronologique"></a>
+            </div>
+        </header>
+        <div id="content_container">
+            <section id="bouton_retour">
+                <div id="retour">
+                    <a href="index.html"><button id="btnRetour"><img src="./images/retour_poi.svg" alt="Bouton retour"></button></a>
+                </div>
+            </section>
+            <section id="content">
+                <div id="titre">
+                    <h1>À travers le temps</h1>
+                    <h2>Fin de parcours</h2>
+                    <div id="compteur">
+                        <div id="icon_compteur">
+                            <img src="./images/icon_compteur.svg" alt="">
+                        </div>
+                        <div id="nb_compteur">
+                            <p>7/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contenu">
+                    <div class="textes">
+                        <p>Après avoir rempli sa mission militaire, le Fort Napoléon a connu plusieurs vies. Il sert un temps de poste de guet, avant d'être utilisé comme refuge par la population locale. Pendant la Seconde Guerre mondiale, il est occupé par les troupes allemandes et transformé en casernement fortifié. Délaissé après le conflit, il tombe en sommeil avant d'être réhabilité dans les années 1990. Aujourd'hui, il est devenu un lieu culturel et patrimonial, ouvert à tous les curieux d'histoire et de paysage.</p>
+                    </div>
+                    <div id="bloc_photos">
+                        <div class="photos">
+                            <img src="./images/hist1.jpg" class="zoomable" alt="Le Fort Napoléon en 1793.">
+                        </div>
+                        <div class="legendes">
+                            <p>Fort Napoléon – Tamaris sur mer – 1793</p>
+                        </div>
+                        <div class="photos">
+                            <img src="./images/hist2.png" class="zoomable" alt="Cérémonie en hommage à Napoléon Bonaparte.">
+                        </div>
+                        <div class="legendes">
+                            <p>Cérémonie en hommage à Napoléon Bonaparte</p>
+                        </div>
+                        <div id="double">
+                            <div class="photos2">
+                                <img src="./images/hist3.jpg" class="zoomable" alt="Fort à l'abandon dans les années 70/80.">
+                            </div>
+                            <div class="photos2">
+                                <img src="./images/hist4.jpg" class="zoomable" alt="Fort à l'abandon dans les années 70/80, vue en plongée.">
+                            </div>
+                        </div>
+                        <div class="legendes">
+                            <p>Fort à l'abandon – Années 70/80 – Avant réhabilitation</p>
+                        </div>
+                        <div class="photos">
+                            <img src="./images/hist5.jpg" class="zoomable" alt="Travaux de rénovation et réhabilitation du fort par la ville de La Seyne-sur-Mer dans les années 80/90.">
+                        </div>
+                        <div class="legendes">
+                            <p>Travaux de rénovation et réhabilitation du fort par la ville de La Seyne-sur-Mer – Années 80/90</p>
+                        </div>
+                    </div>
+                    <div id="fin_content">
+                        <img src="./images/chouette.png" alt="Notre mascotte chouette fait coucou.">
+                        <p>Nous vous remercions de votre visite !</p>
+                        <a href="frise.html"><button id="go_frise">Consultez vos cartes collectées !</button></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="lightbox-overlay" class="hidden">
+        <img id="lightbox-img" src="" alt="Plein écran">
+        <span id="lightbox-close">&times;</span>
+    </div>
+    <script src="frise.js"></script>
+    <script src="poi.js"></script>
+    <script src="lightbox.js"></script>
+</body>
+</html>

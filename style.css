@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --violet: #58559B;
+    --violet_clicked: #413E75;
+    --violet_pale: #CDCAFD;
+    --rose: #F92A82;
+    --noir: #242324;
+    --blanc: #F8F7FC;
+    --blanc_clicked: #D1D1D2;
+    --gris: #B3B3B3;
+}
+

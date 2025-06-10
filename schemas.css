@@ -1,0 +1,21 @@
+#conteneur_image {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  #conteneur_image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .schemas-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    display: none;
+  }

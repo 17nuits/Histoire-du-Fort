@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glacis et chemins couverts - Contrôler sans être vu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="poi_no_vid.css">
+    <link rel="stylesheet" href="schemas.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="icon_header">
+                <a href="index.html"><img src="./images/icon_carte.svg" alt="Icône Carte"></a>
+            </div>
+            <div id="logo">
+                <a id="lien_to_map" href="index.html"><img src="./images/logo.svg" alt="Logo Fort Tales"></a>
+            </div>
+            <div class="icon_header">
+                <a href="frise.html"><img src="./images/icon_frise.svg" alt="Icône Frise chronologique"></a>
+            </div>
+        </header>
+        <div id="content_container">
+            <section id="bouton_retour">
+                <div id="retour">
+                    <a href="index.html"><button id="btnRetour"><img src="./images/retour_poi.svg" alt="Bouton retour"></button></a>
+                </div>
+            </section>
+            <section id="content">
+                <div id="entete" class="flou">
+                    <div id="titre">
+                        <h1>Contrôler sans être vu</h1>
+                        <h2>Glacis et chemins couverts</h2>
+                        <div id="compteur">
+                            <div id="icon_compteur">
+                                <img src="./images/icon_compteur.svg" alt="">
+                            </div>
+                            <div id="nb_compteur">
+                                <p>3/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contenu">
+                    <div class="textes flou">
+                        <p>Les glacis rendent l'approche ennemie dangereuse en supprimant les angles morts. De leur côté, les chemins couverts offrent aux soldats un passage protégé, ce qui leur permettait de surveiller le terrain.</p>
+                    </div>
+                    <div id="schémas" class="flou">
+                        <div id="conteneur_image">
+                            <img src="./images/poi3_image.png" alt="Le Fort vu du haut." id="image-base">
+                            <img src="./images/glacis.svg" alt="Affiche les glacis en superposition." class="schemas-svg" id="svg-glacis">
+                            <img src="./images/chemins.svg" alt="Affiche les chemins couverts en superposition." class="schemas-svg" id="svg-chemins">
+                        </div>
+                        <div id="conteneur_boutons">
+                            <div class="boutons">
+                                <button id="btnGlacis">Les glacis</button>
+                            </div>
+                            <div class="boutons">
+                                <button id="btnChemins">Les chemins couverts</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="espace_chouette">
+                        <div id="chouette">
+                            <img src="./images/chouette.png" alt="Notre mascotte chouette fait coucou.">
+                            <div id="bulle">
+                                <p>Depuis un chemin couvert, un soldat pouvait tirer sans jamais montrer sa tête.</p>
+                            </div>
+                        </div>
+                        <div id="bouton">
+                            <button id="btnchouette">Info chouette !</button>
+                        </div>
+                    </div>
+                    <a class="flou">
+                        <a id="lien_to_map" href="index.html"><p id="next_poi">Rendez-vous au prochain point pour en savoir plus !</p></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="boutons_schemas.js"></script>
+    <script src="chouette.js" defer></script>
+    <script src="poi.js"></script>
+</body>
+</html>
