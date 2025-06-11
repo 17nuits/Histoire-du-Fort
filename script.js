@@ -6,7 +6,6 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19,
 }).addTo(map)
 
-// Icône personnalisée
 const customIcon = L.icon({
   iconUrl: './images/marqueur_before.png',
   iconSize: [32, 41],
@@ -18,6 +17,7 @@ const userIcon = L.icon({
   iconSize: [32, 32],
   iconAnchor: [16, 45],
 })
+
 
 const notifSound = new Audio('./videos/notification.mp3');
 notifSound.volume = 0.5;
@@ -210,10 +210,12 @@ function fonctionSucces(position) {
   const lng = position.coords.longitude
 
   if (!window.userMarker) {
-    window.userMarker = L.marker([lat, lng], { icon: userIcon, zIndexOffset: 1000}).addTo(map)
+    window.userMarker = L.marker([lat, lng], { icon: userIcon }).addTo(map)
   } else {
     window.userMarker.setLatLng([lat, lng])
   }
+
+  window.userMarker.setZIndexOffset(1000)
 
   const seuil = 10
 
