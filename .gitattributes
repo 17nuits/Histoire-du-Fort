@@ -1,5 +1,0 @@
-videos/poi1-final.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/poi6-final.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/poi2-final.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/poi4-final.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/poi5-final.mp4 filter=lfs diff=lfs merge=lfs -text
