@@ -210,7 +210,7 @@ function fonctionSucces(position) {
   const lng = position.coords.longitude
 
   if (!window.userMarker) {
-    window.userMarker = L.marker([lat, lng], { icon: userIcon }).addTo(map)
+    window.userMarker = L.marker([lat, lng], { icon: userIcon, zIndexOffset: 1000}).addTo(map)
   } else {
     window.userMarker.setLatLng([lat, lng])
   }
