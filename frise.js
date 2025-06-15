@@ -21,14 +21,12 @@
       </div>
       <div class=\"rond\"></div>`
 
-    // On insère d'abord la carte (ouverte ou fermée)
     if (card.isLocked) {
       container.insertAdjacentHTML('beforeend', templateLocked)
     } else {
       container.insertAdjacentHTML('beforeend', templateUnlocked)
     }
 
-    // Puis le triangle marqueur
     container.insertAdjacentHTML('beforeend', isLeft ? leftMarker : rightMarker)
     isLeft = !isLeft
   })

@@ -1,6 +1,6 @@
 const map = L.map('map', {
   zoomControl: false
-}).setView([43.09426508666567, 5.893304735524395], 18)
+})
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19,
@@ -18,9 +18,8 @@ const userIcon = L.icon({
   iconAnchor: [16, 45],
 })
 
-
-const notifSound = new Audio('./videos/notification.mp3');
-notifSound.volume = 0.5;
+const notifSound = new Audio('./videos/notification.mp3')
+notifSound.volume = 0.5
 
 const contentRade = `<div class="fermer">
                         <a class="close_link" href="index.html">
@@ -166,13 +165,13 @@ const poisData = [
 ]
 
 const markers = poisData.map(poi => {
-  const marker = L.marker(poi.coords, { icon: customIcon }).addTo(map);
-  marker.bindPopup(poi.content);
+  const marker = L.marker(poi.coords, { icon: customIcon }).addTo(map)
+  marker.bindPopup(poi.content)
   return {
     id: poi.id,
     marker,
     coords: poi.coords,
-    notified: false // on n’a pas encore joué le son pour ce POI
+    notified: false
   }
 })
 
@@ -208,6 +207,8 @@ function fonctionErreur(error) {
 function fonctionSucces(position) {
   const lat = position.coords.latitude
   const lng = position.coords.longitude
+
+   map.setView([lat, lng], 18)
 
   if (!window.userMarker) {
     window.userMarker = L.marker([lat, lng], { icon: userIcon }).addTo(map)
