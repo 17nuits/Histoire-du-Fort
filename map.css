@@ -122,6 +122,7 @@ div.leaflet-pane.leaflet-popup-pane > div > a {
     object-position: center;
     display: block;
     filter: hue-rotate(263deg) saturate(0.4);
+    border-radius: 60px;
 }
 
 .stroke img {
